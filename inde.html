@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotobuks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-purple-100">
+    <!-- Encabezado -->
+    <header class="bg-purple-600 p-4 flex justify-between items-center">
+      <div class="text-white text-2xl font-bold">Fotobuks Logo</div>
+      <div class="flex-grow mx-4">
+        <input
+          type="text"
+          placeholder="Buscador"
+          class="w-full p-2 rounded-md"
+        />
+      </div>
+      <div class="text-white">
+        <div
+          class="bg-white p-2 rounded-full h-10 w-10 flex items-center justify-center"
+        >
+          Perfil
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="flex">
+      <!-- Barra lateral -->
+      <aside class="bg-purple-200 w-1/4 p-4">
+        <ul class="space-y-4 text-lg">
+          <li><a href="#" class="text-purple-600 font-semibold">Menú</a></li>
+          <li><a href="#" class="text-purple-600">Fotógrafos</a></li>
+          <li><a href="#" class="text-purple-600">Clientes</a></li>
+          <li><a href="#" class="text-purple-600">Álbum</a></li>
+        </ul>
+      </aside>
+
+      <!-- Tabla de clientes -->
+      <main class="flex-grow p-6">
+        <h2 class="text-xl font-bold text-purple-800 mb-4">Clientes</h2>
+        <div class="overflow-x-auto">
+          <table class="min-w-full bg-white shadow-md rounded-lg">
+            <thead class="bg-purple-300">
+              <tr>
+                <th class="text-left py-2 px-4">Nombre</th>
+                <th class="text-left py-2 px-4">Apellidos</th>
+                <th class="text-left py-2 px-4">Teléfono</th>
+                <th class="text-left py-2 px-4">Evento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Fila de ejemplo -->
+              <tr class="border-t">
+                <td class="py-2 px-4">Carlos</td>
+                <td class="py-2 px-4">Pérez</td>
+                <td class="py-2 px-4">123-456-7890</td>
+                <td class="py-2 px-4">Boda</td>
+              </tr>
+              <tr class="border-t">
+                <td class="py-2 px-4">Ana</td>
+                <td class="py-2 px-4">García</td>
+                <td class="py-2 px-4">098-765-4321</td>
+                <td class="py-2 px-4">Cumpleaños</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
